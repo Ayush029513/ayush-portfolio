@@ -88,6 +88,30 @@ Edit the respective arrays in `src/components/Experience.tsx` and `src/component
 - **Animations**: Scroll-triggered and hover animations
 - **Responsive Design**: Mobile-first approach
 
+## 🚀 Deployment
+
+### GitHub Pages (Recommended)
+1. Create a new public repository on GitHub named `portfolio`
+2. Update `package.json` homepage with your GitHub username:
+   ```json
+   "homepage": "https://YOUR_USERNAME.github.io/portfolio"
+   ```
+3. Push to GitHub:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/portfolio.git
+   git branch -M main
+   git push -u origin main
+   ```
+4. Enable GitHub Pages in repository settings (Source: GitHub Actions)
+5. Your site will be live at: `https://YOUR_USERNAME.github.io/portfolio`
+
+### Manual Deployment
+```bash
+npm run deploy
+```
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
 ## 📱 Browser Support
 
 - Chrome (recommended)

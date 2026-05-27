@@ -76,25 +76,25 @@ const About = () => {
                 variants={itemVariants}
                 className="text-lg text-gray-300 mb-6 leading-relaxed"
               >
-                I'm an AI & Machine Learning undergraduate pursuing B.Tech in AI (2024–2028), 
-                passionate about building intelligent systems that solve real-world problems.
+                I'm an AI & Machine Learning undergraduate seeking AI/ML internship roles, 
+                pursuing B.Tech in Artificial Intelligence (2024–2028) at G H Raisoni Skill Tech University, Nagpur.
               </motion.p>
               
               <motion.p 
                 variants={itemVariants}
                 className="text-lg text-gray-300 mb-6 leading-relaxed"
               >
-                With hands-on experience in Python, machine learning, deep learning, and 
-                reinforcement learning, I focus on creating innovative solutions in computer vision, 
-                natural language processing, and intelligent agent systems.
+                Hands-on experience in Python, Machine Learning, Deep Learning, Reinforcement Learning, 
+                and computer vision. Built real-world projects including Minimax-based game AI, Q-learning 
+                agents, and PCA-ANN face recognition systems.
               </motion.p>
               
               <motion.p 
                 variants={itemVariants}
                 className="text-lg text-gray-300 leading-relaxed"
               >
-                My expertise spans data preprocessing, model training, evaluation, and optimization, 
-                with a strong foundation in both supervised and unsupervised learning techniques.
+                Strong foundation in data preprocessing, model training, evaluation, and optimization, 
+                with expertise spanning both supervised and unsupervised learning techniques.
               </motion.p>
             </div>
             

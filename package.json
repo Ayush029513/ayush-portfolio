@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://ayushgharpinde.github.io/portfolio",
+  "homepage": "https://Ayush029513.github.io/ayush-portfolio",
   "dependencies": {
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",

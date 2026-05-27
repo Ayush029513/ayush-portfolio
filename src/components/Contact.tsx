@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { Float, Sphere } from '@react-three/drei'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Mail, MapPin, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, MapPin, Github, Linkedin, Send, Phone } from 'lucide-react'
 
 const FloatingOrb = ({ position, color }: { position: [number, number, number], color: string }) => {
   return (
@@ -30,6 +30,13 @@ const Contact = () => {
       color: "text-blue-400"
     },
     {
+      icon: <Phone size={24} />,
+      label: "Phone",
+      value: "+91 9370044181",
+      href: "tel:+919370044181",
+      color: "text-green-400"
+    },
+    {
       icon: <MapPin size={24} />,
       label: "Location",
       value: "Nagpur, Maharashtra, India",
@@ -46,8 +53,8 @@ const Contact = () => {
     {
       icon: <Linkedin size={24} />,
       label: "LinkedIn",
-      value: "linkedin.com/in/ayushgharpinde",
-      href: "https://linkedin.com/in/ayushgharpinde",
+      value: "linkedin.com/in/ayush-gharpinde",
+      href: "https://linkedin.com/in/ayush-gharpinde",
       color: "text-blue-500"
     }
   ]

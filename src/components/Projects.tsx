@@ -89,16 +89,16 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Tic Tac Toe AI",
-      description: "Unbeatable AI using the Minimax algorithm with game-tree logic for optimal move selection. Implements perfect strategic gameplay with efficient decision-making.",
+      title: "Tic Tac Toe AI using Minimax Algorithm",
+      description: "Designed an unbeatable Tic Tac Toe AI using the Minimax decision algorithm. Implemented game-tree logic to ensure optimal move selection, guaranteeing perfect strategic gameplay in every scenario.",
       tech: ["Python", "Minimax Algorithm", "Game Theory"],
       github: "https://github.com/ayushgharpinde/tic-tac-toe-ai",
       demo: null,
       icon: <Brain size={24} />
     },
     {
-      title: "Reinforcement Learning - Taxi Q-Learning Agent",
-      description: "Built from scratch using OpenAI Gym Taxi-v3 environment. Tuned hyperparameters (alpha, gamma, epsilon) for optimal reward maximization and learning efficiency.",
+      title: "Reinforcement Learning – Taxi Q-Learning Agent",
+      description: "Implemented Q-Learning from scratch using OpenAI Gym's Taxi-v3 environment. Trained an agent to efficiently navigate a 5×5 grid with 500 states and 6 actions. Optimized hyperparameters (alpha, gamma, epsilon) to improve rewards and minimize penalties.",
       tech: ["Python", "NumPy", "OpenAI Gym", "Q-Learning"],
       github: "https://github.com/ayushgharpinde/taxi-q-learning",
       demo: null,
@@ -106,7 +106,7 @@ const Projects = () => {
     },
     {
       title: "Customer Churn Prediction",
-      description: "End-to-end machine learning pipeline featuring data cleaning, feature engineering, and EDA. Built classification models to identify high-risk customers with high accuracy.",
+      description: "Built a machine learning model to predict customer churn using historical customer data. Performed data cleaning, feature engineering, and exploratory data analysis to identify key churn factors. Trained and evaluated classification models to improve prediction accuracy, helping businesses proactively retain high-risk customers.",
       tech: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
       github: "https://github.com/ayushgharpinde/customer-churn-prediction",
       demo: null,
@@ -114,7 +114,7 @@ const Projects = () => {
     },
     {
       title: "Mental Health Chatbot",
-      description: "NLP-based chatbot with intent recognition and context-aware responses. Designed with empathetic communication patterns and accessibility-focused user interface.",
+      description: "Built an AI-powered chatbot using Python and NLP to provide empathetic mental health support through intent recognition and contextual responses. Focused on accurate intent classification, user-friendly interaction, and accessibility.",
       tech: ["Python", "NLP", "TensorFlow", "Flask"],
       github: "https://github.com/ayushgharpinde/mental-health-chatbot",
       demo: null,

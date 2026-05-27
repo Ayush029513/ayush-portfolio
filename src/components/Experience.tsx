@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Briefcase, Code, Zap, Calendar } from 'lucide-react'
+import { Briefcase, Code, Calendar } from 'lucide-react'
 
 const ExperienceCard = ({ experience, index, isLast }: { experience: any, index: number, isLast: boolean }) => {
   const [ref, inView] = useInView({
@@ -81,28 +81,28 @@ const Experience = () => {
 
   const experiences = [
     {
+      role: "Open Source Contributor & Ambassador",
+      company: "GirlScript Summer of Code (GSSoC) 2026",
+      period: "2026",
+      description: "Earned both the Contributor and Ambassador badges. Contributed to open-source projects under GS Labs by GirlScript Foundation, while also representing the program as an Ambassador — promoting open-source culture and community outreach.",
+      skills: ["Open Source", "Community Leadership", "Outreach", "Version Control", "GS Labs"],
+      icon: <Code size={24} />
+    },
+    {
       role: "Open Source Contributor",
       company: "GirlScript Summer of Code (GSSoC) 2025",
       period: "2025",
-      description: "Contributing to open-source projects in AI/ML domain, collaborating with global developers, and implementing innovative solutions for real-world problems.",
-      skills: ["Open Source", "Python", "Machine Learning", "Collaboration"],
+      description: "Contributed to open-source projects in collaborative development environments. Gained experience with version control, debugging, and scalable code practices.",
+      skills: ["Open Source", "Python", "Version Control", "Debugging", "Collaboration"],
       icon: <Code size={24} />
     },
     {
       role: "AI Intern",
-      company: "Kodacy (with SPACE)",
+      company: "Kodacy (in collaboration with SPACE)",
       period: "2024",
-      description: "Worked on AI-driven solutions, gained hands-on experience in machine learning model development, and contributed to innovative AI applications.",
-      skills: ["AI Development", "Python", "Model Training", "Data Analysis"],
+      description: "Developed an AI-based game system using Python and neural networks, optimizing decision-making logic to achieve an unbeatable AI agent. Implemented logic using Python, neural networks, and algorithm optimization techniques. Strengthened understanding of AI workflows, model reasoning, and performance tuning.",
+      skills: ["Python", "Neural Networks", "Algorithm Optimization", "AI Development", "Performance Tuning"],
       icon: <Briefcase size={24} />
-    },
-    {
-      role: "Generative AI Program Participant",
-      company: "HCL GUVI",
-      period: "2024",
-      description: "Completed comprehensive training in Generative AI technologies, exploring cutting-edge applications and implementation strategies.",
-      skills: ["Generative AI", "Deep Learning", "Neural Networks", "AI Ethics"],
-      icon: <Zap size={24} />
     }
   ]
 

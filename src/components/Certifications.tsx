@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Award, Database, Brain, Zap, Building } from 'lucide-react'
+import { Award, Database, Brain, Zap, Building, Cloud, Star } from 'lucide-react'
 
 const CertificationCard = ({ cert, index }: { cert: any, index: number }) => {
   const [ref, inView] = useInView({
@@ -44,7 +44,7 @@ const CertificationCard = ({ cert, index }: { cert: any, index: number }) => {
         {cert.description}
       </p>
       
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {cert.skills.map((skill: string, skillIndex: number) => (
           <motion.span
             key={skill}
@@ -57,6 +57,17 @@ const CertificationCard = ({ cert, index }: { cert: any, index: number }) => {
           </motion.span>
         ))}
       </div>
+
+      {cert.link && (
+        <a
+          href={cert.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 transition-colors duration-200 underline underline-offset-2"
+        >
+          Verify Certificate ↗
+        </a>
+      )}
     </motion.div>
   )
 }
@@ -107,6 +118,47 @@ const Certifications = () => {
       description: "Specialized training in using Generative AI for advanced data analytics and business intelligence solutions.",
       skills: ["Data Analytics", "Generative AI", "Business Intelligence", "Tata Technologies"],
       icon: <Building size={24} />
+    },
+    {
+      title: "AWS AI Practitioner Challenge",
+      issuer: "Udacity",
+      year: "2026",
+      description: "Verified certificate of course completion for the AWS AI Practitioner Challenge, confirming hands-on knowledge of AWS AI services and cloud-based AI solutions.",
+      skills: ["AWS", "AI Practitioner", "Cloud AI", "Amazon Web Services"],
+      icon: <Cloud size={24} />,
+      link: "https://www.udacity.com/certificate/e/cd5583da-31e1-11f1-801e-3b6008e372d1"
+    },
+    {
+      title: "AWS Scholars: Analyze Data using AI with PartyRock",
+      issuer: "AWS Scholars Program",
+      year: "2026",
+      description: "Project badge awarded for building and deploying an AI-powered data analysis application using Amazon PartyRock as part of the AWS Scholars Program.",
+      skills: ["AWS PartyRock", "Generative AI", "Data Analysis", "No-Code AI"],
+      icon: <Star size={24} />
+    },
+    {
+      title: "AWS Scholars: Build Your First AI Productivity App",
+      issuer: "AWS Scholars Program",
+      year: "2026",
+      description: "Project badge awarded for successfully building a first AI productivity application as part of the AWS Scholars Program curriculum.",
+      skills: ["AWS", "AI App Development", "Productivity Tools", "Generative AI"],
+      icon: <Star size={24} />
+    },
+    {
+      title: "GSSoC 2026 – Contributor Badge",
+      issuer: "GirlScript Foundation (GS Labs)",
+      year: "2026",
+      description: "Official Contributor badge awarded by GirlScript Summer of Code 2026 for active participation and contributions to open-source projects under the GS Labs program.",
+      skills: ["Open Source", "Collaboration", "Version Control", "GSSoC"],
+      icon: <Award size={24} />
+    },
+    {
+      title: "GSSoC 2026 – Ambassador Badge",
+      issuer: "GirlScript Foundation (GS Labs)",
+      year: "2026",
+      description: "Ambassador badge awarded by GirlScript Summer of Code 2026, recognizing community leadership, outreach, and promotion of open-source culture.",
+      skills: ["Community Leadership", "Open Source", "Outreach", "GSSoC"],
+      icon: <Award size={24} />
     }
   ]
 
@@ -151,9 +203,9 @@ const Certifications = () => {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { number: "5+", label: "Certifications" },
+            { number: "10+", label: "Certifications" },
             { number: "3+", label: "Cloud Platforms" },
-            { number: "2025", label: "Latest Cert" },
+            { number: "2026", label: "Latest Cert" },
             { number: "100%", label: "Completion Rate" }
           ].map((stat, index) => (
             <motion.div

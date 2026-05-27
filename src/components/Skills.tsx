@@ -33,7 +33,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming",
-      skills: ["Python", "NumPy", "SciPy"],
+      skills: ["Python", "Java", "NumPy", "SciPy"],
       color: "#3b82f6"
     },
     {
@@ -90,8 +90,9 @@ const Skills = () => {
             <Suspense fallback={null}>
               {/* Programming Skills */}
               <SkillCard3D position={[-3, 2, 0]} text="Python" color="#3b82f6" />
-              <SkillCard3D position={[-1, 2.5, 0]} text="NumPy" color="#3b82f6" />
-              <SkillCard3D position={[1, 2, 0]} text="SciPy" color="#3b82f6" />
+              <SkillCard3D position={[-1, 2.5, 0]} text="Java" color="#3b82f6" />
+              <SkillCard3D position={[1, 2, 0]} text="NumPy" color="#3b82f6" />
+              <SkillCard3D position={[3, 2.5, 0]} text="SciPy" color="#3b82f6" />
               
               {/* ML Skills */}
               <SkillCard3D position={[-3, 0.5, 0]} text="Supervised ML" color="#8b5cf6" />
